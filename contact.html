@@ -36,7 +36,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <!--header-->
     <div id="header"></div>
@@ -44,7 +43,45 @@
         <section class="main-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/rowingmachine.jpg); min-width: 100%">
             <h1>Contact Us</h1>
         </section>
-        
+        <section class="form">
+            <h2>Send a message</h2>
+            <form action="https://co-dee.github.io/TAFE-ML-FItness/" method="post">
+                <label for="first-name"><span>First name <span class="required">*</span></span>
+                    <input type="text"class="input-field" name="first-name" value="" minlength="3" placeholder="Dan" pattern="[A-Za-z ]{3,32}" required>
+                </label>
+                <label for="surname"><span>Surname</span>
+                    <input type="text" class="input-field" name="surname" minlength="3" value="" placeholder="Sixpack" pattern="[A-Za-z ]{3,32}" required>
+                </label>
+                <label for="email"><span>Email <span class="required">*</span></span>
+                    <input type="email" class="input-field" name="email" value="" placeholder="example@123.com" size="32" minlength="3" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" required>
+                </label>
+                <label for="tel"><span>Mobile number<span class="required">*</span></span>
+                    <input type="tel" class="tel-number-field" name="tel" value="" minlength="10" maxlength="10"
+                    placeholder="0400 000 000" pattern="[0][4][0-9]{8}" required >
+                </label>
+                <label for="contact-method"><span>Preferred Contact Method</span>
+                    <select name="contact-method" class="select-field">
+                        <option value="No preference">No preference</option>
+                        <option value="Email">Email</option>
+                        <option value="Mobile number">Mobile number</option>
+                    </select>
+                </label>
+                <label for="club"><span>Preferred Club</span>
+                    <select name="club" class="select-field">
+                        <option value="No preference">No preference</option>
+                        <option value="Ashgrove">Ashgrove</option>
+                        <option value="Brisbane-City">Brisbane City</option>
+                        <option value="Chermside">Chermside</option>
+                        <option value="Graceville">Graceville</option>
+                        <option value="Westlake">Westlake</option>
+                    </select>
+                </label>
+                <label for="message"><span>Message <span class="required">*</span></span>
+                    <textarea name="message" class="textarea-field" placeholder="Type your message here" minlength="10" required></textarea>
+                </label>
+                <label><button type="submit" value="Submit">Send your message</button></label>
+            </form>
+        </section>            
         <section id="ready" class="main-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/womanwithrope.jpg); min-width: 100%">
             <h1>Ready to get started?</h1>
             <a href="contact.html"><button class="button" role="button">Contact Us &#8594;</button></a>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Strength - Contact Us</title>
+    <!--script to load header-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"   
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+            $('#header').load('header.html')
+        })
+    </script>    
+    <!--script to load footer-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"   
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+            $('#footer').load('footer.html')
+        })
+    </script> 
+    <!--stylesheet-->
+    <link rel="stylesheet" href="css/style.css">  
+    <!--Goole fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--header-->
+    <div id="header"></div>
+    <main class="main">
+        <section class="main-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/rowingmachine.jpg); min-width: 100%">
+            <h1>Contact Us</h1>
+        </section>
+        <section class="form">
+            <h2>Send a message</h2>
+            <form action="index.html" method="get">
+                <label for="first-name"><span class="required">First name</span>
+                    <input type="text"class="input-field" name="first-name" value="" minlength="3" placeholder="First name (required)" pattern="[A-Za-z ]{3,32}" required>
+                </label>
+                <label for="surname"><span>Surname</span>
+                    <input type="text" class="input-field" name="surname" minlength="3" value="" placeholder="Surname (optional)" pattern="[A-Za-z ]{3,32}" required>
+                </label>
+                <label for="email"><span class="required">Email</span>
+                    <input type="email" class="input-field" name="email" value="" placeholder="Email: example@123.com (required)" size="32" minlength="3" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" required>
+                </label>
+                <label for="tel"><span class="required">Mobile number</span>
+                    <input type="tel" class="tel-number-field" name="tel" value="" minlength="10" maxlength="10"
+                    placeholder="Mobile number: 0400 000 000 (required)" pattern="[0][4][0-9]{8}" required>
+                </label>
+                <label for="contact-method"><span>Preferred contact method</span>
+                    <select name="contact-method" class="select-field">
+                        <option value="No preference">Select your preferred contact method:</option>
+                        <option value="Email">Email</option>
+                        <option value="Mobile number">Mobile number</option>
+                    </select>
+                </label>
+                <label for="club"><span>Preferred Club</span>
+                    <select name="club" class="select-field">
+                        <option value="No preference">Select your preferred Club:</option>
+                        <option value="Ashgrove">Ashgrove</option>
+                        <option value="Brisbane-City">Brisbane City</option>
+                        <option value="Chermside">Chermside</option>
+                        <option value="Graceville">Graceville</option>
+                        <option value="Westlake">Westlake</option>
+                    </select>
+                </label>
+                <label for="message"><span class="required">Message</span>
+                    <textarea name="message" class="textarea-field" placeholder="Type your message here (required)" minlength="10" required></textarea>
+                </label>
+                <label><button type="submit" value="Submit">Send your message</button></label>
+            </form>
+        </section>            
+        <section id="ready" class="main-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/womanwithcrossfitrope.jpg); min-width: 100%">
+            <h1>Ready to get started?</h1>
+            <button class="button"><a href="contact.html">Contact Us &#8594;</a></button>
+        </section>
+    </main>
+    <!--footer-->
+    <div id="footer"></div>
+</body>
+</html>

@@ -452,12 +452,12 @@ span.required::after {
   color: #fff;
 }
 input:required:invalid, input:focus:invalid {
-  background-image: url(/AT3_Website_Menese_450784996/icons/crosswithcircle.png);
+  background-image: url(../icons/crosswithcircle.png);
   background-position: right top;
   background-repeat: no-repeat;
 }
 input:required:valid {
-  background-image: url(/AT3_Website_Menese_450784996/icons/checkwithcircle.png);
+  background-image: url(../icons/checkwithcircle.png);
   background-position: right top;
   background-repeat: no-repeat;
 }

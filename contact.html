@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--jquery for hover-->
+    <script>
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        function vidPlay() {  
+        $("#video1").get(0).play();  
+        };
+        function vidPause() {
+        $("#video1").get(0).pause();
+        };
+        $(document).ready(function(){
+  $("#textToggler").click(function(){
+    $(".toggleText").toggle();
+  });
+});
+        function toggleImage() {
+        $(".hiddenclickimg").toggle();
+        };
+    </script>
     <title>ML Strength - Contact Us</title>
     <!--script to load header-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"   
@@ -14,7 +36,7 @@
         $(function(){
             $('#header').load('header.html')
         })
-    </script>    
+    </script>     
     <!--script to load footer-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"   
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   
@@ -80,6 +102,12 @@
                     <textarea name="message" class="textarea-field" placeholder="Type your message here (required)" minlength="10" required></textarea>
                 </label>
                 <label><button type="submit" value="Submit">Send your message</button></label>
+                 <p>
+                    Need <span class="hiddentxt" onmouseover="vidPlay()" onmouseout="vidPause()"><a href="https://www.youtube.com/watch?v=5kbTHIoTO8s">help?</a></span>.
+                    <span class="hiddenimg"><video id="video1" loop>
+                    <source src="video/MLStrengthvideo.mp4" type="video/mp4">
+                    </video></span>
+                </p>
             </form>
         </section>            
         <section id="ready" class="main-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/womanwithcrossfitrope.jpg); min-width: 100%">
